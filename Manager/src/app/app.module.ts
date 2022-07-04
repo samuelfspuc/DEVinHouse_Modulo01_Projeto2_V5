@@ -12,12 +12,16 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { RedefinirSenhaPageComponent } from './pages/redefinir-senha-page/redefinir-senha-page.component';
+import { RedefinirSenhaComponent } from './components/redefinir-senha/redefinir-senha.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    RedefinirSenhaPageComponent,
+    RedefinirSenhaComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,6 @@ import { MatCardModule } from '@angular/material/card';
     MatInputModule, 
     MatButtonModule,
     ReactiveFormsModule,
-    /*Angular material */
     MatCardModule
   ],
   providers: [],
