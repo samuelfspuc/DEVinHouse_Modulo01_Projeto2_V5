@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card style="height: 500px !important;">
     <mat-card-title>Dashboard</mat-card-title>
     <mat-card-content>
         <mat-list>
@@ -6,8 +6,8 @@
                 <mat-list-item>CADASTROS</mat-list-item>
                 <mat-list style="margin-left:30px;">
                     <div>
-                        <mat-list-item href="...">Coleções</mat-list-item>
-                        <mat-list-item href="...">Modelos</mat-list-item>
+                        <mat-list-item style="cursor: pointer" routerLink="/home" [routerLinkActive]="['is-active']">Coleções</mat-list-item>
+                        <mat-list-item style="cursor: pointer" routerLink="/modelos" [routerLinkActive]="['is-active']">Modelos</mat-list-item>
                     </div>
                 </mat-list>
             </ng-container>
@@ -17,8 +17,8 @@
                 <mat-list-item>SUPORTE</mat-list-item>
                 <mat-list style="margin-left:30px;">
                     <div>
-                        <mat-list-item href="...">Obter Ajuda</mat-list-item>
-                        <mat-list-item href="...">Enviar Comentários</mat-list-item>
+                        <mat-list-item style="cursor: pointer" routerLink="/obter-ajuda" [routerLinkActive]="['is-active']">Obter Ajuda</mat-list-item>
+                        <mat-list-item style="cursor: pointer" routerLink="/enviar-comentarios" [routerLinkActive]="['is-active']">Enviar Comentários</mat-list-item>
                     </div>
                 </mat-list>
             </ng-container>
