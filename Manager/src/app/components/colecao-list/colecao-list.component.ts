@@ -14,7 +14,7 @@ export class ColecaoListComponent implements OnInit {
   public dataSource: Colecao[] = [];
 
   constructor(
-    private colecaoService: ColecaoService,
+    private colecaoService: ColecaoService
   ) { }
 
   ngOnInit(): void {

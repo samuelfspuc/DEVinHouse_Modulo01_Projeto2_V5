@@ -1,0 +1,60 @@
+<mat-card>
+    <mat-card-content style="height: 499px !important;">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            
+            <div fxLayout="column" style="height:100%" fxLayoutGap="10px">
+                <div fxFlex="10%">
+                    <div fxLayout="row">
+                        <div fxFlex="25%" fxLayoutAlign="center center">
+                            <h1>Criar Coleção</h1>
+                        </div>
+                    </div>
+                </div>
+                <div fxFlex="80%">
+                    <p>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Nome da Coleção" formControlName="nome">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Responsável pela Coleção"
+                                formControlName="responsavel">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Para qual estação?" formControlName="estacao">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Para qual marca você está criando"
+                                formControlName="marca">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Qual é o orçamento desta coleção?"
+                                formControlName="orcamento">
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Ano de lançamento" formControlName="ano">
+                        </mat-form-field>
+                    </p>
+                </div>
+                <div fxFlex="10%">
+                    <div fxLayout="row">
+                        <div fxFlex="90%" fxLayoutAlign="end center" fxLayoutGap="15px">
+                            <button mat-raised-button color="basic" routerLink="/colecao-list">Cancelar</button>
+                            <button mat-raised-button color="primary" type="submit">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </form>        
+    </mat-card-content>
+</mat-card>

@@ -43,6 +43,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 
+import { CommonModule } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
+
 import { LoginComponent } from './components/login/login.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RedefinirSenhaPageComponent } from './pages/redefinir-senha-page/redefinir-senha-page.component';
@@ -50,6 +53,8 @@ import { RedefinirSenhaComponent } from './components/redefinir-senha/redefinir-
 import { ColecaoListPageComponent } from './pages/colecao-list-page/colecao-list-page.component';
 import { ColecaoListComponent } from './components/colecao-list/colecao-list.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ColecaoCreatePageComponent } from './pages/colecao-create-page/colecao-create-page.component';
+import { ColecaoCreateComponent } from './components/colecao-create/colecao-create.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,9 @@ import { MenuComponent } from './components/menu/menu.component';
     RedefinirSenhaComponent,
     ColecaoListPageComponent,
     ColecaoListComponent,
-    MenuComponent
+    MenuComponent,
+    ColecaoCreatePageComponent,
+    ColecaoCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +77,9 @@ import { MenuComponent } from './components/menu/menu.component';
     ReactiveFormsModule,
     FlexLayoutModule,
     HttpClientModule,
+    /* Toast */
+    CommonModule,
+    ToastrModule.forRoot(), // ToastrModule added
     /* Material */
     MatAutocompleteModule,
     MatBadgeModule,
