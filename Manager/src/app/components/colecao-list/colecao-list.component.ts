@@ -3,13 +3,13 @@ import { Colecao } from 'src/app/models/Colecao';
 import { ColecaoService } from 'src/app/services/colecao.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-colecao-list',
+  templateUrl: './colecao-list.component.html',
+  styleUrls: ['./colecao-list.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ColecaoListComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'nome', 'orcamento', 'responsavel'];
+  displayedColumns: string[] = ['id', 'nome', 'estacaoLancamento', 'responsavel'];
   colecoes: Colecao[] = [];
   public dataSource: Colecao[] = [];
 

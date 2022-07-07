@@ -47,8 +47,8 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RedefinirSenhaPageComponent } from './pages/redefinir-senha-page/redefinir-senha-page.component';
 import { RedefinirSenhaComponent } from './components/redefinir-senha/redefinir-senha.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { HomeComponent } from './components/home/home.component';
+import { ColecaoListPageComponent } from './pages/colecao-list-page/colecao-list-page.component';
+import { ColecaoListComponent } from './components/colecao-list/colecao-list.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
@@ -58,8 +58,8 @@ import { MenuComponent } from './components/menu/menu.component';
     LoginPageComponent,
     RedefinirSenhaPageComponent,
     RedefinirSenhaComponent,
-    HomePageComponent,
-    HomeComponent,
+    ColecaoListPageComponent,
+    ColecaoListComponent,
     MenuComponent
   ],
   imports: [

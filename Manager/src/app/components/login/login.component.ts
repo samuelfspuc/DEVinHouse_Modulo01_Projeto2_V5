@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
 
   submit() {
     if (this.formLogin.valid) {
-      this.router.navigate(['/home'])
+      this.router.navigate(['/colecao-list'])
     }
   }
 
